@@ -27,8 +27,12 @@ def deidentify_with_replace_infotype(
     # Convert the project id into a full resource id.
     parent = f"projects/{project}/locations/global"
 
+    info_types = [{"name": info_type} for info_type in info_types]
+
     # Construct inspect configuration dictionary
-    inspect_config = {"info_types": [{"name": info_type} for info_type in info_types]}
+    inspect_config = {
+            "info_types": info_types
+            }
 
     # Construct deidentify configuration dictionary
     deidentify_config = {
@@ -50,11 +54,13 @@ def deidentify_with_replace_infotype(
     )
 
     # Print out the results.
+    print(response)
+    print()
     print(response.item.value)
 
 
 item = "Hey Alex, what time will you be arriving at SFO?"
-info_types = ["PERSON_NAME", "LOCATION", "EMAIL_ADDRESS"]
+info_types = ["PERSON_NAME", "LOCATION", "EMAIL_ADDRESS", "US_INDIVIDUAL_TAXPAYER_IDENTIFICATION_NUMBER"]
 deidentify_with_replace_infotype(project, item, info_types)
 
 
