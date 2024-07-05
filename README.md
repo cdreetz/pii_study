@@ -8,6 +8,8 @@ Add your keys vars to a .env file, following the .env.example
 
 `src/pii_services.py` can be used to test each of the services, it should be run like `python src/pii_services.py azure`
 
+Find the resulting dataset after processing [here](https://huggingface.co/datasets/cdreetz/filtered-pii-results)
+
 # PII Extraction and Redaction Study
 
 With the increasing number of user facing conversational AI applications, 
