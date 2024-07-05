@@ -60,7 +60,7 @@ authorized account has access to. You might also need to enable the APIs.
 
 
 ## Results
-
+```
 Azure Results:
 Precision: 0.8165
 Recall: 0.7622
@@ -97,3 +97,4 @@ Date:
   True labels: 5390
   Azure detected: 4109
   GCP detected: 4529
+```
