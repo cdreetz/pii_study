@@ -1,3 +1,13 @@
+# How to use
+
+Add your keys vars to a .env file, following the .env.example 
+
+`src/main.py` will use both the Azure ang GCP services and iterate over the pulled HF dataset, and save the results in their corresponding columns
+
+`src/check_data.py` can be used to examine the data pulled during the study
+
+`src/pii_services.py` can be used to test each of the services, it should be run like `python src/pii_services.py azure`
+
 # PII Extraction and Redaction Study
 
 With the increasing number of user facing conversational AI applications, 
