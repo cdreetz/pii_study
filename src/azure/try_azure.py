@@ -5,8 +5,8 @@ import os
 
 load_dotenv()
 
-key = os.getenv("key")
-endpoint = os.getenv("endpoint")
+key = os.getenv("AZURE_API_KEY")
+endpoint = os.getenv("AZURE_ENDPOINT")
 
 # Authenticate the client using your key and endpoint 
 def authenticate_client():
