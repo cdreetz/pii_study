@@ -56,3 +56,44 @@ authorized account has access to. You might also need to enable the APIs.
 
 
 ## AWS
+
+
+
+## Results
+
+Azure Results:
+Precision: 0.8165
+Recall: 0.7622
+F1 Score: 0.7592
+
+GCP Results:
+Precision: 0.8635
+Recall: 0.7755
+F1 Score: 0.7974
+
+PII Type Counts:
+
+Email:
+  True labels: 1130
+  Azure detected: 721
+  GCP detected: 1110
+
+Name:
+  True labels: 4124
+  Azure detected: 4443
+  GCP detected: 5215
+
+Street_address:
+  True labels: 1458
+  Azure detected: 878
+  GCP detected: 1013
+
+Phone_number:
+  True labels: 385
+  Azure detected: 389
+  GCP detected: 0
+
+Date:
+  True labels: 5390
+  Azure detected: 4109
+  GCP detected: 4529
