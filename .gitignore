@@ -3,3 +3,4 @@ env/
 __pycache__/
 .DS_store
 src/aws/redact_modules/
+src/aws/redact_modules
